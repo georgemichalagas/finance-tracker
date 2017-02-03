@@ -1,6 +1,4 @@
 class CreateFriendships < ActiveRecord::Migration
-  belongs_to :user
-  belongs_to :friend, :class_name => 'User'
 
   def change
     create_table :friendships do |t|
